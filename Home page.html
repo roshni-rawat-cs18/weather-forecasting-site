@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather card</title>
+
+   
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Icon css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  css file --> 
+    <link rel="stylesheet" type="text/css" href="home page.css">
+   
+    <link rel="stylesheet" href="header-footer.css"> 
+    <link rel="stylesheet" href="share-btn.css">
+    <link rel="stylesheet" href="emoji.css">
+
+</head>
+<body>
+ <!-- ======= Header ======= -->
+    <!--------------- Header ---------------->
+
+    <div  class="header">
+        <!------------ Logo ---------->
+        <nav id="logo"><a class="navbar-brand" href="#"><img src="./weather_images/logo.jpeg"> Weather Forcast</a></nav>
+        <!------------ Logo----------->
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars" ></i>
+        </label>
+        <ul class="menu">
+
+            <!-------------- Links ------------>
+
+           <li><a class="button" href="#popup1"><i class="fa fa-share" aria-hidden="true"></i> Share</a> </li>
+           <li><a href="#"  class="dropdown-toggle"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+           
+           <ul class="submenu1">
+               <li><a href="#">Map</a></li>
+               <li><a class="button" href="#popup2">Feedback</a> </li>
+               <li><a href="#">Polices</a></li>
+           </ul>
+        </li>
+           <li><a href="5-days.html"><i class="fa fa-cloud" aria-hidden="true"></i>5-days forecast</a></li>
+           <button onclick="myFunction()">Dark mode</button>
+           <label for="chk" class="hide-btn">
+               <i class="fa fa-times" ></i>
+           </label>
+       </ul>
+       
+    </div>
+    <!------------------ End Header ----------------->
+ 
+
+       <!------------------ Share Popup start ----------------->
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+          <h2>Share</h2>
+          <a class="close" href="#">&times;</a>
+          <hr>
+          <div class="content">
+            
+              <table>
+                  <tr>
+                      <th><i class="fa fa-facebook "></i></th>
+                      <th><a href="https://www.facebook.com/">Facebook </a></th>
+                  </tr>
+                  <tr>
+                      <th><i class="fa fa-whatsapp"></i></th>
+                      <th><a href="https://web.whatsapp.com/"> Whatsapp</a></th>
+                  </tr>
+                  <tr>
+                      <th><i class="fa fa-instagram"></i></th>
+                      <th><a href="https://www.instagram.com/">Instagram</a></th>
+                  </tr>
+                  <tr>
+                      <th><i class="fa fa-twitter"></i></th>
+                      <th><a href="https://twitter.com/">Twitter </a></th>
+                  </tr>
+                  <tr>
+                      <th><i class="fa fa-linkedin"></i></th>
+                      <th><a href="https://linkedin.com/">LinkedIn</a></th>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </div>
+
+   <!-------------------- Share Popup ends -------------------->
+
+
+    <!-------------------- Setting Popup starts --------------------->
+
+   
+   <div id="popup2" class="overlay">
+       <div class="popup3">
+           <h1>FEEDBACK</h1>
+           <a class="close" href="#">&times;</a>
+           <hr>
+         <!---  <ul>
+               <li>&#128513</li>
+               &#128525
+               &#128077
+               &#9829
+           </ul>-->
+           
+          
+    <form>
+       <div class="siterating">
+           
+           <input type="radio" name="rating" id="like">
+           <label for="like"></label>
+           <input type="radio" name="rating" id="love">
+           <label for="love"></label>
+
+           <input type="radio" name="rating" id="haha">
+           <label for="haha"></label>
+           <input type="radio" name="rating" id="wow">
+           <label for="wow"></label>
+           <input type="radio" name="rating" id="sad">
+           <label for="sad"></label>
+           <input type="radio" name="rating" id="angry">
+           <label for="angry"></label>
+           
+           
+       </div>
+       <button type="submit" class="btn btn-primary" style="margin-left: 45%;">Submit</button>
+    </form>
+
+   </div>
+   </div>
+   
+     <!--------------------- Setting Popup ends ---------------------->
+
+
+     <!-----------------------  text column start ---------------------->
+<div class="container-fuild">
+    <div class="row">
+      <div class="column " >
+        
+         <h1>Different kind of weather<br><br>
+         inside of 24/7 hours.</h1>
+         <div class="news">
+           <p>You too often some very human cultural artifacts really  </p>
+           <p>lead the business down the certain routes</p>
+         </div>
+           <div class="material-icons" >
+             <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+           </div>
+
+           <!------------------search input box for entering the loction----------------------->
+
+           <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter location..." autocomplete="off">
+           </div>
+          <small class=" text-muted"> press enter to search</small>
+          <h2>Best way to know your city weather...</h2>
+ 
+        </div>
+
+     
+         <!---------------------text column ends ----------------------->
+
+
+   
+ 
+ 
+
+    <!-- ------------------card column start---------------------- -->
+    <div class="column1">
+
+        <h1>Today's Weather</h1>
+        
+
+        <!-------------- searched location weather details--------------->
+        <div class="weather-body">
+
+            <div class="location-details">
+                <div class="city" id="city">City</div>
+                <div class="date" id="date">Date Month (Day), Year</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp">T &deg;C</div>
+                <div class="min-max" id="min-max">T &deg;C (min) / T &deg;C (max)</div>
+                <div class="weather" id="weather">weather type</div>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+    <!-- ----------------------card  column end------------------------- -->
+ 
+
+   
+ <!-- ---------dark mode js starts-------- -->
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+
+ <!-- ---------dark mode js ends-------- -->
+
+ <!-- ---------link to js-------- -->
+ <script src="weather_card.js"></script>
+
+</body>
+</html>

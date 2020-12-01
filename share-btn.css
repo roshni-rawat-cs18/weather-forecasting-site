@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    }
+
+    
+
+   
+    .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+   
+    }
+    .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    }
+
+    .popup {
+    margin: 70px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    width: 20%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    box-shadow: 10px 10px 8px #888888;
+    
+    }
+
+    .popup h2 {
+    margin-top: 8px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+    }
+    
+    .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    }
+    .popup .close:hover {
+    color: #06D85F;
+    }
+    .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    }
+
+    @media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+    }
+
+    table{
+        width: 268px;
+        height: 25vh;
+        /* border: 1px solid #34495e; */
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    table,tr,td,th{
+        border-bottom: 1px solid #34495e;
+        cursor: pointer;
+        
+    }
+
+    table tr th i{
+        padding: 12px;
+        width: 50px;
+        border: 2px solid black;
+    }
+
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+
+    .fa-instagram {
+    background: #e95950;
+    color: white;
+    }
+
+    .fa-whatsapp {
+    background: #25d366;
+    color: white;
+    }
+
+    .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    }
+
+    .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
