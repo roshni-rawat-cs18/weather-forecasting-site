@@ -2,29 +2,9 @@ body {
     font-family: Arial, sans-serif;
     }
 
-    .box {
-    width: 40%;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-    }
+    
 
-    .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid #06D85F;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    background: #06D85F;
-    }
-
+   
     .overlay {
     position: fixed;
     top: 0;
@@ -35,6 +15,7 @@ body {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+   
     }
     .overlay:target {
     visibility: visible;
@@ -50,6 +31,7 @@ body {
     position: relative;
     transition: all 5s ease-in-out;
     box-shadow: 10px 10px 8px #888888;
+    
     }
 
     .popup h2 {
@@ -58,7 +40,7 @@ body {
     font-family: Tahoma, Arial, sans-serif;
     text-align: center;
     }
-
+    
     .popup .close {
     position: absolute;
     top: 20px;
@@ -97,11 +79,12 @@ body {
     table,tr,td,th{
         border-bottom: 1px solid #34495e;
         cursor: pointer;
+        
     }
 
     table tr th i{
         padding: 12px;
-        width: 15px;
+        width: 50px;
         border: 2px solid black;
     }
 
