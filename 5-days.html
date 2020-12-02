@@ -1,38 +1,37 @@
 <html>
-  <style>
-body {
-  background-image: url('https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fDUlMjBkYXlzJTIwd2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="5-days.css">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------ css file-------------- -->
+    <link rel="stylesheet" href="5-days.css">
+
+    <!-- --------------google font link------------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <h1 class="main-heading">5-Days Forcasting</h1>
+
+    <!-- ---------------input city ------------ -->
     <div class="input">
-      <input type="text" placeholder="Enter a city" class="input_text">
+      <input type="text" placeholder="Enter City Name..." class="input_text">
       <input type="submit" value="Submit" class="submit">
-     
     </div>
-  </div>
 
-  <div class="container">
-    <div class="card">
-    
-      <h1 class="name" id="name"></h1>
-      <p id="day1"></p>
-      
-      <p id="day2"></p>
-      <p id="day3"></p>
-
-      <p id="day4"></p>
-      <p id="day5"></p>
-    
+    <!-- ------------5 day weather--------------- -->
+    <div class="container">
+      <div class="card">
+        <h1 class="name" id="name"></h1>
+        <p id="day1"></p>
+        <p id="day2"></p>
+        <p id="day3"></p>
+        <p id="day4"></p>
+        <p id="day5"></p>
+      </div>
     </div>
-  </div>
-<script src="5-days.js"></script>
-</body>
+
+    <!-- -------------js file-------------- -->
+    <script src="5-days.js"></script>
+  </body>
 </html>
