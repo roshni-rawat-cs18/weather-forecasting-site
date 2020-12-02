@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google map</title>
 
+    <!-- --------google font link------------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
     <style>
         *{
             margin: 0px;
@@ -12,17 +15,19 @@
             box-sizing: border-box;
         }
         body{
-            background: radial-gradient(circle, rgba(234,234,229,1) 32%, rgb(217, 240, 253) 99%);
+            background: radial-gradient(circle, rgb(253, 246, 246) 32%, rgb(145, 214, 252) 99%);
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
         }
+
+        /* -------------google map css---------------- */
         .google_map{
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 100px;
-            margin-top: 100px;
             min-height: 75vh;
         }
         .mapouter{
@@ -44,7 +49,8 @@
             border-radius: 10px;
             box-shadow: -10px 2px 13px -7px #000000, 10px 2px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
         }
-        .gmap_canvas:hover{
+        .gmap_canvas:hover,
+        .image-box:hover{
             box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.322);
         }
         iframe{
@@ -52,10 +58,126 @@
             height: 100%;
         }
 
+
+        /* -------------banner image css---------------- */
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+            margin-top: 60px;
+            height: 400px;
+        }
+        .image-box{
+            background-color: white;
+            padding: 30px;
+            height: 430px;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: -10px 2px 13px -7px #000000, 10px 2px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        }
+        .image-box img{
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        .heading{
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            color: rgb(5, 24, 46);
+            text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+        }
+
+
+        /* --------------first breakpoint--------------- */
+        @media(max-width: 800px){
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+                margin-top: 60px;
+                height: 300px;
+            }
+            .image-box{
+                background-color: white;
+                padding: 25px;
+                height: 300px;
+                width: 80%;
+                border-radius: 10px;
+                box-shadow: -10px 2px 13px -7px #000000, 10px 2px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            .image-box img{
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+            }
+            .heading{
+                font-size: 55px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 60px;
+                color: rgb(5, 24, 46);
+                text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+            }
+        }
+
+
+        /* --------------second breakpoint--------------- */
+        @media(max-width: 600px){
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+                margin-top: 60px;
+                height: 250px;
+            }
+            .image-box{
+                background-color: white;
+                padding: 25px;
+                height: 250px;
+                width: 80%;
+                border-radius: 10px;
+                box-shadow: -10px 2px 13px -7px #000000, 10px 2px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            .image-box img{
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+            }
+            .heading{
+                font-size: 45px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 60px;
+                color: rgb(5, 24, 46);
+                text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+            }
+        }
+
+
     </style>
+    
 </head>
 <body>
+
+    <!-- ------------heading---------------- -->
+    <h1 class="heading">Get Location</h1>
+
+    <!-- ----------banner image------------ -->
+    <section class="image">
+        <div class="image-box">
+            <img src="./weather_images/google-map-img.jpg" alt="">
+        </div>
+    </section>
     
+    <!-- ------------google map-------------- -->
     <section class="google_map">
         <div class="mapouter">
             <div class="gmap_canvas">
