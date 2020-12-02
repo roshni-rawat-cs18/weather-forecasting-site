@@ -27,17 +27,16 @@ button.addEventListener('click', function(name){
   var firstday = d.getDay()
   
   main.innerHTML = cityName + ", " + countryName;
-  day1box.innerHTML = days[firstday] + ": " + day1w + '°'
-  day2box.innerHTML = days[firstday + 1] + ": " + day2w + '°'
-  day3box.innerHTML = days[firstday + 2] + ": " + day3w + '°'
-  day4box.innerHTML = days[firstday + 3] + ": " + day4w + '°'
-  day5box.innerHTML = days[firstday + 4] + ": " + day5w + '°'
-  
+  day1box.innerHTML = days[firstday] + ": " + day1w + '&deg;F'
+  day2box.innerHTML = days[firstday + 1] + ": " + day2w + '&deg;F'
+  day3box.innerHTML = days[firstday + 2] + ": " + day3w + '&deg;F'
+  day4box.innerHTML = days[firstday + 3] + ": " + day4w + '&deg;F'
+  day5box.innerHTML = days[firstday + 4] + ": " + day5w + '&deg;F'
   input.value ="";
 
 })
 
-.catch(err => alert("Wrong city name!"));
+.catch(err => alert("Wrong city name!.....Please correct it"));
 })
 
 
