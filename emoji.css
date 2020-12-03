@@ -214,12 +214,12 @@
     }
     @media screen and (max-width: 464px){
         .popup3{
-            margin-left: 30px;
+            margin-left: 18px;
             width: 86%;
           }
           .container{
             position: relative;
-            width: 350px;
+            width: 300px;
             background: #111;
             
             padding: 10px 10px;
@@ -236,10 +236,12 @@
             font-weight: 500;
           }
           .star-widget label{
-            font-size: 40px;
+            font-size: 35px;
             color: #444;
             padding: 10px;
             float: right;
             transition: all 0.2s ease;
           }
+         
+          
     }

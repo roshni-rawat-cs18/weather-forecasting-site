@@ -136,6 +136,7 @@ body {
     .popup{
         width: 38%;
     }
+}
     @media screen and (max-width: 1000px){
         .popup{
             width: 43%;
@@ -174,7 +175,11 @@ body {
           
             
         }
-        
+        .popup h2 {
+            margin-top: 15px;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+            text-align: center;
+            }
        
     }
-}
