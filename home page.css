@@ -1,0 +1,451 @@
+
+
+
+.row{
+  margin-left: 10%;
+}
+
+ /* first column css */
+
+  .column h1{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 40px;
+    margin-top: 40px;
+   
+  }
+  .news{
+    margin: 50px 0 50px 0;
+  
+  }
+  .column p{
+    letter-spacing: 5px;
+    font-size: 20px;
+  
+  }
+  .material-icons{
+    position:absolute;
+    margin: 10px 0px 0px 30px;
+   
+  }
+  ::placeholder{
+    font-size: 20px;
+    color: #f1f1f1; 
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  .input-box{
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+    border-radius: 5px ;
+    font-size: 20px;
+    margin-bottom: 3px;
+    background-color: #707ed6;
+    letter-spacing: 1px;
+    color: black;
+    width: 80%;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#007bce,#4dcafc);
+    cursor: pointer;
+  }
+  .input-box:hover{
+    background-image: linear-gradient(to right,#4dcafc,#007bce);
+  }
+  button
+  {
+   background:none;
+   color: white;
+   border: none;
+  }
+  button:hover{
+    cursor: pointer;
+    border: none;
+    text-shadow:  0 0 10px grey, 0 0 15px white;
+    
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+
+  /* second column or card css */
+
+  .column1{
+    width: 53vh;
+    margin-left: 6%;
+    background-image:url(./weather_images/card_images/mist.jpg);
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.column1 h1{
+    background-color:  rgba(255, 255, 255, 0.301);
+    padding: 10px;
+    font-size: 30px;
+    text-indent: 10px;
+    font-weight: bold;
+     text-shadow: 2px 2px 8px rgb(255,3,192) ;
+}
+
+.column1 h1::before{
+        content: '';
+        position: absolute;
+        top: 150px;
+        margin-left: -25px;
+       
+      }
+
+/* this is for styling all the child elements in the card-main */
+.column1 > *{
+    margin-bottom: 20px;
+}
+
+
+.weather-body{
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.301);
+    height: 60vh;
+}
+
+.location-details{
+    font-weight: bold;
+    
+}
+.weather-status{
+    padding: 20px;
+}
+.city{
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+.temp{
+    /* points (pt) is also used for measuring font size */
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0, 0 ,0, 0.3);
+}
+.min-max , .weather{
+    font-size: 15pt;
+    font-weight: 700;
+}
+.weather{
+    margin-top: 10px;
+}
+
+
+/*Responsive CSS */
+
+/*first break-point*/
+
+@media(max-width: 1299px){
+  .row{
+    margin-left: 8%;
+  }
+  .column h1{
+    font-size: 35px;
+  }
+  .column p{
+    font-size: 15px;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 270px;
+    height: 270px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+}
+
+/* second break-point*/
+
+@media(max-width: 1141px){
+  .row{
+    margin-left: 5%;
+  }
+  .column h1{
+    font-size: 30px;
+  }
+  .column p{
+    font-size: 13px;
+    
+  }
+  .column1{
+    margin-left: 2%;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 240px;
+    height: 240px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+}
+
+/* third break-point*/
+
+@media(max-width: 1044px){
+  .row{
+    margin-left: 15%;
+  }
+  .column h1{
+    font-size: 40px;
+  }
+  .column p{
+    font-size: 20px;
+    
+  }
+  .column1{
+    margin-left: 21%;
+    margin-top: 20px;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+  
+}
+
+/*fourth break-point*/
+
+@media(max-width: 866px){
+  .row{
+    margin-left: 13%;
+  }
+  .column h1{
+    font-size: 35px;
+  }
+  .column p{
+    font-size: 17px;
+    
+  }
+  .column1{
+    margin-left: 17%;
+    margin-top: 20px;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 270px;
+    height: 270px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+  
+}
+  
+/*fifth break-point*/
+
+@media(max-width: 631px){
+  .row{
+    margin-left: 6%;
+  }
+  .column h1{
+    font-size: 30px;
+  }
+  .column p{
+    font-size: 15px;
+    
+  }
+  .column1{
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+  ::placeholder
+  {
+    font-size: 15px;
+    color: #f1f1f1; 
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  .input-box{
+      
+    
+    
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+    border-radius: 5px ;
+    font-size: 20px;
+    margin-bottom: 3px;
+    background-color: #707ed6;
+    letter-spacing: 1px;
+    color: black;
+    width: 75%;
+    font-weight: bold;
+   
+    cursor: pointer;
+  }
+
+  /*some header css */
+
+  #logo a{
+    visibility: hidden;
+  }
+  .navbar-brand img{
+    
+  visibility: visible;
+
+
+  }
+  .header{
+    width:100% !important;
+    height: 70px;
+  
+    background-color:rgb(34, 34, 34);
+    padding: 0 20px ;
+    
+    font-family: Poppins;
+    margin-bottom: 60px;
+  
+  }
+
+  
+ }
+
+/*sixth break-point*/
+
+@media(max-width: 361px){
+ 
+  .row{
+    margin-left: 4%;
+    max-width: 100%;
+    
+  }
+  .column{
+    margin-left: 8%;
+    width: 100%;
+  }
+  .column h1{
+    font-size: 30px;
+  }
+  .column p{
+    font-size: 15px;
+    
+  }
+  .column1{
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+  .column::before{
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255,3,192);
+    background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
+    z-index: -1;
+  }
+  .input-box{
+    
+  
+   
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+    border-radius: 5px ;
+    font-size: 20px;
+    margin-bottom: 3px;
+   
+    letter-spacing: 1px;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    
+    cursor: pointer;
+  }
+  .column1 h1{
+    background-color:  rgba(255, 255, 255, 0.301);
+    padding: 10px;
+    font-size: 28px;
+    text-indent: 10px;
+    font-weight: bold;
+  }
+  .location-details{
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  #container {
+    min-width: 0;
+  }
+
+  /*some header css */
+
+  #logo a{
+   
+    visibility: hidden;
+  }
+  .navbar-brand img{
+    
+  visibility: visible;
+
+
+  }
+  .header{
+    width:100% !important;
+    height: 70px;
+  
+    background-color:rgb(34, 34, 34);
+  
+    
+    font-family: Poppins;
+    margin-bottom: 60px;
+  
+  }
+
+
+}
