@@ -214,7 +214,7 @@
 
 /* third break-point*/
 
-@media(max-width: 1044px){
+@media(max-width: 1071px){
   .row{
     margin-left: 15%;
   }
@@ -243,6 +243,7 @@
   }
   
 }
+
 
 /*fourth break-point*/
 
