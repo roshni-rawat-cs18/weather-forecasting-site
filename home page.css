@@ -3,6 +3,8 @@
 
 .row{
   margin-left: 10%;
+  
+  
 }
 
  /* first column css */
@@ -12,7 +14,7 @@
     letter-spacing: 2px;
     word-spacing: 2px;
     font-size: 40px;
-    margin-top: 40px;
+    margin-top: 150px;
    
   }
   .news{
@@ -87,7 +89,7 @@
     background-image:url(./weather_images/card_images/mist.jpg);
     padding: 20px;
     text-align: center;
-    top: 0;
+    margin-top: 130px;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -122,6 +124,7 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.301);
     height: 60vh;
+    
 }
 
 .location-details{
@@ -155,7 +158,7 @@
 
 /*first break-point*/
 
-@media(max-width: 1299px){
+@media(max-width: 1367px){
   .row{
     margin-left: 8%;
   }
@@ -181,7 +184,7 @@
 
 /* second break-point*/
 
-@media(max-width: 1141px){
+@media(max-width: 1180px){
   .row{
     margin-left: 5%;
   }
@@ -211,7 +214,7 @@
 
 /* third break-point*/
 
-@media(max-width: 1044px){
+@media(max-width: 1071px){
   .row{
     margin-left: 15%;
   }
@@ -240,6 +243,7 @@
   }
   
 }
+
 
 /*fourth break-point*/
 
@@ -339,32 +343,21 @@
 
 
   }
-  .header{
-    width:100% !important;
-    height: 70px;
-  
-    background-color:rgb(34, 34, 34);
-    padding: 0 20px ;
-    
-    font-family: Poppins;
-    margin-bottom: 60px;
-  
-  }
-
+ 
   
  }
 
 /*sixth break-point*/
 
-@media(max-width: 361px){
+@media(max-width: 401px){
  
   .row{
-    margin-left: 4%;
+    margin-left: 3%;
     max-width: 100%;
     
   }
   .column{
-    margin-left: 8%;
+    margin-left: 7%;
     width: 100%;
   }
   .column h1{
@@ -375,17 +368,17 @@
     
   }
   .column1{
-    margin-left: 15%;
-    margin-top: 20px;
+    margin-left: 2%;
+    margin-top: 30px;
   }
   .column::before{
     content: '';
     position: absolute;
     top: 150px;
-    left: 100px;
+    left: 75px;
     border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
     background-color: rgb(255,3,192);
     background-image: linear-gradient(90deg,rgba(255,3,192,1)0%,rgba(44,126,255,1)97%);
     z-index: -1;
@@ -403,7 +396,7 @@
    
     letter-spacing: 1px;
     color: black;
-    width: 100%;
+    width: 90%;
     font-weight: bold;
     
     cursor: pointer;
@@ -419,9 +412,21 @@
     font-weight: bold;
     margin-top: 0px;
   }
+  .material-icons{
+   
+    display: none;
+  }
   #container {
     min-width: 0;
   }
+  ::placeholder{
+    font-size: 11.5px;
+    color: #f1f1f1; 
+    
+   padding: 0;
+   margin: 0;
+  }
+
 
   /*some header css */
 
@@ -432,20 +437,15 @@
   .navbar-brand img{
     
   visibility: visible;
+  
 
 
   }
-  .header{
-    width:100% !important;
-    height: 70px;
-  
-    background-color:rgb(34, 34, 34);
-  
+  .weather-body{
+    margin-bottom: 15px;
     
-    font-family: Poppins;
-    margin-bottom: 60px;
+}
   
-  }
 
 
 }
