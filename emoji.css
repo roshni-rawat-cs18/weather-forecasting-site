@@ -63,19 +63,19 @@
      text-shadow: 0 0 20px #952;
    }
    #rate-1:checked ~ form header:before{
-     content: "I just hate it 😠";
+     content: "Just hate it 😠";
    }
    #rate-2:checked ~ form header:before{
-     content: "I don't like it 😒";
+     content: "Don't like it 😒";
    }
    #rate-3:checked ~ form header:before{
      content: "It is awesome 😄";
    }
    #rate-4:checked ~ form header:before{
-     content: "I just like it 😎";
+     content: "Just like it 😎";
    }
    #rate-5:checked ~ form header:before{
-     content: "I just love it 😍";
+     content: "Just love it 😍";
    }
    .container form{
      display: none;
@@ -153,6 +153,7 @@
     .popup3{
     margin-left: 30%;
     padding: 10px;
+    margin-top: 5%;
     background: #fff;
     border-radius: 5px;
     width: 38%;
@@ -186,7 +187,7 @@
     }
     @media screen and (max-width: 1098px){
         .popup3{
-          
+            margin-top: 6%;
             width: 50%;
          }
         
@@ -203,6 +204,7 @@
         .popup3{
             margin-left: 100px;
             width: 75%;
+            margin-top: 8%;
           }
           
     }
@@ -210,16 +212,18 @@
         .popup3{
             margin-left: 30px;
             width: 86%;
+            margin-top: 10%;
           }
     }
     @media screen and (max-width: 464px){
         .popup3{
-            margin-left: 30px;
+            margin-left: 18px;
             width: 86%;
+            margin-top:12%;
           }
           .container{
             position: relative;
-            width: 350px;
+            width: 300px;
             background: #111;
             
             padding: 10px 10px;
@@ -236,10 +240,18 @@
             font-weight: 500;
           }
           .star-widget label{
-            font-size: 40px;
+            font-size: 35px;
             color: #444;
             padding: 10px;
             float: right;
             transition: all 0.2s ease;
           }
+         
+          
     }
+
+    @media screen and (max-width: 375px){
+      .popup3{
+          margin-top: 16%;
+        }
+      }

@@ -1,0 +1,305 @@
+.sec-1{
+    width: 100%;
+}
+.sec-1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.sec-1 p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify !important;
+}
+.colorchange{
+    animation:colorchangefunterior 1s infinite;
+}
+@keyframes colorchangefunterior{
+    0%{color: green;}
+    25%{color:blue;}
+    50%{color:red;}
+    100%{color:yellow;}
+}
+
+main .section-one{
+    width: 100%;
+	height: 80vh;
+	padding-top: 0;
+	margin-left: 8px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 3px 1px #0000007B;
+	/*float: left;*/
+}
+main .section-one .card{
+    background: gainsboro;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+main .section-one .card .imageHolder{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+
+}
+main .section-one .card img{
+    width: 100%;
+	height: 100%;
+	user-select: none;
+}
+.caption{
+	display: none;
+}
+main .section-one .card .captionHolder{
+    height: 70px;
+	background: #00000077;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+main .section-one .card .captionHolder .text{
+    color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	line-height: 35px;
+	user-select: none;
+}
+main .section-one .card .leftArrow,
+main .section-one .card .rightArrow{
+    width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 40%;
+	background: #00000036;
+	cursor: pointer;
+	z-index: 1;
+}
+main .section-one .card .leftArrow{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+main .section-one .card .rightArrow{
+	right: 0;
+	left: auto;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+main .section-one .card .leftArrow :hover,
+main .section-one .card .rightArrow :hover{
+    background: #000000a8;
+}
+main .section-one .card .leftArrow .arrow,
+main .section-one .card .rightArrow .arrow{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border: 3px solid #fff;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-left: none;
+	border-bottom: none;
+}
+main .section-one .card .leftArrow .arrow.arrowleft{
+	transform: rotateZ(-135deg);
+}
+main .section-one .card .rightArrow .arrow.arrowRight{
+	transform: rotateZ(45deg);
+}
+.card .moveRightCurrent{
+	animation-name: moveRightCurrentSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+} 
+@keyframes moveRightCurrentSlide{
+	from{
+		margin-left: 0;
+		opacity: 1;
+	}to{
+		margin-left: -100%;
+		opacity: 1;
+	}
+}
+
+.card .moveRightNext{
+	animation-name: moveRightNextSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveRightNextSlide{
+	from{
+		margin-left: 100%;
+		opacity: 1;
+	}to{
+		margin-left: 0;
+		opacity: 1;
+	}
+}
+
+.card .moveLeftCurrent{
+	animation-name: moveLeftCurrentSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftCurrentSlide{
+	from{
+		margin-left: 0;
+		opacity: 1;
+	}to{
+		margin-left: 100%;
+		opacity: 1;
+	}
+}
+
+.card .moveLeftNext{
+	animation-name: moveLeftNextSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftNextSlide{
+	from{
+		margin-left: -100%;
+		opacity: 1;
+	}to{
+		margin-left: 0;
+		opacity: 1;
+	}
+}
+.sec-3 .right{
+    width: 48%;
+	float: right;
+	
+}
+.sec-3 .right p{
+	text-align: justify !important;
+	font-size: 18px;
+}
+.sec-3 .right button{
+	/*background-color: blue;
+	border: 1px solid blue;*/
+	width: 180px;
+	height: 30px;
+      border-radius: 10px;
+      border: white;
+      background-image: linear-gradient(to right,#007bce,#4dcafc);
+}
+.sec-3 .right button a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+.sec-3 .left{
+    width: 48%;
+	float: left;
+}
+.sec-3 .left p{
+	text-align: justify !important;
+	font-size: 18px;
+}
+/*==========================responsive====================*/
+@media screen and (max-width: 991px){
+	main .section-one .card .imageHolder{
+		width: 90%;
+		height: 40vh;
+	}
+	main .section-one .card .leftArrow,
+	main .section-one .card .rightArrow{
+		width: 60px;
+		height: 60px;
+	}
+	main .section-one .card .leftArrow .arrow,
+	main .section-one .card .rightArrow .arrow{
+		width: 20px;
+		height: 20px;
+		border-width: 5px;
+	}
+	main .section-one .card .captionHolder{
+		height: 150px;
+	}
+	main .section-one .card .captionHolder .text{
+		line-height: 150px;
+		font-size: 20px;
+	}
+}
+/* For Microsoft Lumina 550 */
+@media screen and (max-width: 640px){
+	main .section-one{
+		height: 45vh;
+	}
+	main .section-one .card .imageHolder{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	
+	main .section-one .card img{
+		width: 100%;
+		height: 100%;
+		user-select: none;
+	}
+	main .section-one .card{
+		height: 45vh;
+	}
+	main .section-one .card .leftArrow,
+	main .section-one .card .rightArrow{
+		top: 30%;
+	}
+	main .section-one .card .captionHolder{
+		height: 70px;
+	}
+	main .section-one .card .captionHolder .text{
+		line-height: 35px;
+		font-size: 20px;
+	}
+	/*.sec-3 .right{
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.sec-3 .left{
+		width: 100%;
+		
+	}*/
+}
+
+/* For IPad Pros */
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+	main .section-one .main-card{
+		height: 75vh;
+	}
+	main .section-one .main-card .card .leftArrow,
+	main .section-one .main-card .card .rightArrow{
+		width: 100px;
+		height: 150px;
+	}
+	main .section-one .main-card .card .leftArrow .arrow,
+	main .section-one .main-card .card .rightArrow .arrow{
+		width: 20px;
+		height: 20px;
+	}
+	main #section-one .main-card .card .captionHolder{
+		height: 130px;
+	}
+	main #section-one .main-card .card .captionHolder .text{
+		line-height: 130px;
+		font-size: 45px;
+	}
+}
