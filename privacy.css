@@ -24,7 +24,7 @@
 }
 
 main .section-one{
-    width: 100%;
+    width: 99.5%;
 	height: 80vh;
 	padding-top: 0;
 	margin-left: 8px;
@@ -182,6 +182,9 @@ main .section-one .card .rightArrow .arrow.arrowRight{
 		opacity: 1;
 	}
 }
+.sec-3{
+	padding: 15px;
+}
 .sec-3 .right{
     width: 48%;
 	float: right;
@@ -212,6 +215,9 @@ main .section-one .card .rightArrow .arrow.arrowRight{
 .sec-3 .left p{
 	text-align: justify !important;
 	font-size: 18px;
+}
+.sec-3 ul li{
+	text-align: justify;
 }
 /*==========================responsive====================*/
 @media screen and (max-width: 991px){
